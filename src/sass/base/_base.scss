@@ -1,0 +1,29 @@
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	@include font ();
+	font-family: $font-main;
+}
+
+.container {
+	max-width: $content-width;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.wrapper_theme_dark {
+	background-color: $color-dark-add;
+	color: $color-light;
+
+	a {
+		color: $color-light;
+		transition: $transition;
+
+		&:hover {
+			color: $color-linknav-activ;
+		}
+	}
+}

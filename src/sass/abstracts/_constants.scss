@@ -1,0 +1,37 @@
+$font-main: 'Roboto', Verdana, sans-serif;
+
+$color-light: #FFFFFF;
+$color-dark: #000000;
+$color-dark-add: #111115;
+$color-yellow: #FFEE2E;
+$color-text: #333B41;
+$color-text-small: #767474;
+$color-text-email: #BDBDBD;
+$color-orange: #F9804B;
+$color-linknav-activ: #F9804B;
+$color-link-activ: #4B9200;
+$color-button-hover: #E47209;
+$color-button-activ: #4B9200;
+$color-button-disabled: #767474;
+$color-icon: #000000;
+$color-icon-add: #333B41;
+$color-icon-activ: #4B9200;
+$color-social: rgba(196, 196, 196, 0.5);
+$color-fon: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+$color-fon-add: rgba(253, 253, 255, 0.52);
+$color-comment-fon: #F1F3F2;
+$color-line-scrol: #F9804B;
+$color-line-scrol-add: #F5F7F6;
+$color-input-border: #F9804B;
+$color-input-fon: #333B41;
+$color-form-activ: #4B9200;
+$color-form-mistake: #D31414;
+$color-form-border: #333B41;
+$color-form-fonadd: #F1F3F2;
+
+$content-width: calc(1160px + 20px);
+$laptop-width: 1000px;
+$tablet-width: 640px;
+$mobile-width: 320px;
+
+$transition: all .3s ease-out;

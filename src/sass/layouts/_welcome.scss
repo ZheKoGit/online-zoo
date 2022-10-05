@@ -1,0 +1,39 @@
+.welcome {
+	padding: 86px 0 100px 0;
+	background: url(/src/img/header/Giant_Panda.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+}
+
+.welcome__content {
+	position: relative;
+	max-width: 574px;
+	margin-left: auto;
+}
+
+.welcome__ellipse {
+	position: absolute;
+	top: -74px;
+	width: 465px;
+	height: 465px;
+	@extend %color-button;
+	border-radius: 50%;
+}
+
+.welcome__title {
+	position: relative;
+	max-width: 500px;
+	margin: 0 0 60px auto;
+	@include font (normal, 700, 10.6rem, 8rem);
+	text-transform: uppercase;
+	text-align: center;
+	color: $color-light;
+
+	span {
+		color: $color-yellow;
+	}
+}
+
+.welcome__button {
+	margin: 0 100px 0 auto;
+}

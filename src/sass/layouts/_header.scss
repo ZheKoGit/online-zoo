@@ -1,0 +1,23 @@
+.header {
+	height: 80px;
+	display: flex;
+}
+
+.header__columns,
+.header__navigation,
+.navigation {
+	@include columns();
+}
+
+.header__columns {
+	flex: 1;
+	justify-content: flex-start;
+}
+
+.navigation__item {
+	margin-right: 58px;
+}
+
+.header__navigation {
+	flex: 1;
+}

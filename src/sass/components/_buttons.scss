@@ -1,0 +1,19 @@
+.button {
+	@include columns(flex, center);
+	width: 298px;
+	height: 54px;
+	@include font(normal, 500);
+	color: $color-light;
+	text-transform: uppercase;
+	@extend %color-button;
+	border-radius: 25px;
+	transition: $transition;
+
+	&:hover {
+		background: $color-button-hover;
+	}
+
+	&:active {
+		background: $color-button-activ;
+	}
+}
