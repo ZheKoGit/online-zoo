@@ -1,5 +1,4 @@
-@mixin font ($style: normal, $weight: 400, $size: 1.6rem, $height: 2.2rem) {
-	font-style: $style;
+@mixin font ($weight: 400, $size: 1.6rem, $height: 2.2rem) {
 	font-weight: $weight;
 	font-size: $size;
 	line-height: $height;
@@ -9,6 +8,12 @@
 	display: $display;
 	justify-content: $jus-c;
 	align-items: $al-i;
+}
+
+@mixin bg ($bi, $br: no-repeat, $bs: cover) {
+	background-image: $bi;
+	background-repeat: $br;
+	background-size: $bs;
 }
 
 @mixin media-laptop {

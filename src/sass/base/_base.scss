@@ -4,8 +4,10 @@ html {
 }
 
 body {
+	font-style: normal;
 	@include font ();
 	font-family: $font-main;
+	color: $color-text;
 }
 
 .container {
@@ -26,4 +28,18 @@ body {
 			color: $color-linknav-activ;
 		}
 	}
+}
+
+.title {
+	margin: 0;
+	@include font(400, 4.8rem, 5.8rem);
+}
+
+.subtitle {
+	margin: 0;
+	@include font(400, 2.4rem, 2.9rem);
+}
+
+p {
+	margin: 0;
 }

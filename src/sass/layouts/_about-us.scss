@@ -1,0 +1,61 @@
+.about-us {
+	position: relative;
+	padding: 140px 0 180px 0;
+
+	@include media-laptop {
+		padding: 100px 0 145px 0;
+	}
+}
+
+.about-us__columns {
+	@include columns();
+}
+
+.about-us__image {
+	flex: 609px;
+	order: -1;
+	height: 403px;
+	margin-right: 87px;
+	@include bg(url(/src/img/about_us/bamboo-cap.jpg));
+	background-position: 50% 0;
+
+	@include media-laptop {
+		flex: 1 0 455px;
+		height: 408px;
+		margin-right: 31px;
+	}
+}
+
+.about-us__content {
+	flex: 465px;
+	background-color: $color-light;
+}
+
+.about-us__title {
+	margin-bottom: 20px;
+}
+
+.about-us__subtitle {
+	margin-bottom: 34px;
+}
+
+.about-us__text {
+	&:first-of-type {
+		margin-bottom: 54px;
+		line-height: 21px;
+	}
+}
+
+.about-us__image-fon {
+	position: absolute;
+	top: 7px;
+	right: 0;
+	z-index: -1;
+	width: 204px;
+	height: 605px;
+	@include bg(url(/src/img/backgrounds/flower_foto1.png));
+
+	@include media-laptop {
+		display: none;
+	}
+}

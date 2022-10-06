@@ -1,7 +1,6 @@
 .welcome {
 	padding: 86px 0 100px 0;
-	background: url(/src/img/header/Giant_Panda.jpg);
-	background-repeat: no-repeat;
+	@include bg(url(/src/img/header/Giant_Panda.jpg));
 	background-position: 0 100%;
 
 	@include media-laptop {
@@ -42,7 +41,7 @@
 .welcome__title {
 	position: relative;
 	margin: 0 0 60px auto;
-	@include font (normal, 700, 10.6rem, 8rem);
+	@include font (700, 10.6rem, 8rem);
 	text-transform: uppercase;
 	text-align: center;
 	color: $color-light;
@@ -53,7 +52,7 @@
 
 	@include media-laptop {
 		margin-bottom: 40px;
-		@include font (normal, 700, 8.5rem, 6.4rem);
+		@include font (700, 8.5rem, 6.4rem);
 	}
 }
 

@@ -13,10 +13,11 @@ body {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-family: "Roboto", Verdana, sans-serif;
+  color: #333B41;
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -31,6 +32,24 @@ body {
 }
 .wrapper_theme_dark a:hover {
   color: #F9804B;
+}
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -469,9 +488,8 @@ ul {
   align-items: center;
   width: 298px;
   height: 54px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: normal;
+  font-size: 500;
   line-height: 2.2rem;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -521,8 +539,9 @@ ul {
 
 .welcome {
   padding: 86px 0 100px 0;
-  background: url(/src/img/header/Giant_Panda.jpg);
+  background-image: url(/src/img/header/Giant_Panda.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0 100%;
 }
 @media (max-width: 1000px) {
@@ -565,7 +584,6 @@ ul {
 .welcome__title {
   position: relative;
   margin: 0 0 60px auto;
-  font-style: normal;
   font-weight: 700;
   font-size: 10.6rem;
   line-height: 8rem;
@@ -579,7 +597,6 @@ ul {
 @media (max-width: 1000px) {
   .welcome__title {
     margin-bottom: 40px;
-    font-style: normal;
     font-weight: 700;
     font-size: 8.5rem;
     line-height: 6.4rem;
@@ -590,8 +607,76 @@ ul {
   margin: 0 100px 0 auto;
 }
 
-/*@import './layouts/visiting';
-@import './layouts/tour';
+.about-us {
+  position: relative;
+  padding: 140px 0 180px 0;
+}
+@media (max-width: 1000px) {
+  .about-us {
+    padding: 100px 0 145px 0;
+  }
+}
+
+.about-us__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us__image {
+  flex: 609px;
+  order: -1;
+  height: 403px;
+  margin-right: 87px;
+  background-image: url(/src/img/about_us/bamboo-cap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+@media (max-width: 1000px) {
+  .about-us__image {
+    flex: 1 0 455px;
+    height: 408px;
+    margin-right: 31px;
+  }
+}
+
+.about-us__content {
+  flex: 465px;
+  background-color: #FFFFFF;
+}
+
+.about-us__title {
+  margin-bottom: 20px;
+}
+
+.about-us__subtitle {
+  margin-bottom: 34px;
+}
+
+.about-us__text:first-of-type {
+  margin-bottom: 54px;
+  line-height: 21px;
+}
+
+.about-us__image-fon {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  z-index: -1;
+  width: 204px;
+  height: 605px;
+  background-image: url(/src/img/backgrounds/flower_foto1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1000px) {
+  .about-us__image-fon {
+    display: none;
+  }
+}
+
+/*@import './layouts/tour';
 @import './layouts/explore';
 @import './layouts/video';
 @import './layouts/gallery';
