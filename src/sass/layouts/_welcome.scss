@@ -3,26 +3,44 @@
 	background: url(/src/img/header/Giant_Panda.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 100%;
+
+	@include media-laptop {
+		padding: 43px 0 47px 0;
+		background-size: 118% auto;
+		background-position: 57% 100%;
+	}
 }
 
 .welcome__content {
 	position: relative;
-	max-width: 574px;
+	max-width: 500px;
 	margin-left: auto;
+
+	@include media-laptop {
+		max-width: 400px;
+		margin-right: 55px;
+	}
 }
 
 .welcome__ellipse {
 	position: absolute;
 	top: -74px;
+	left: -73px;
 	width: 465px;
 	height: 465px;
 	@extend %color-button;
 	border-radius: 50%;
+
+	@include media-laptop {
+		top: -54px;
+		left: -58px;
+		width: 367px;
+		height: 367px;
+	}
 }
 
 .welcome__title {
 	position: relative;
-	max-width: 500px;
 	margin: 0 0 60px auto;
 	@include font (normal, 700, 10.6rem, 8rem);
 	text-transform: uppercase;
@@ -31,6 +49,11 @@
 
 	span {
 		color: $color-yellow;
+	}
+
+	@include media-laptop {
+		margin-bottom: 40px;
+		@include font (normal, 700, 8.5rem, 6.4rem);
 	}
 }
 

@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .wrapper_theme_dark {
@@ -492,8 +492,10 @@ ul {
 @import './components/parallax';
 @import './components/social';*/
 .header {
-  height: 80px;
   display: flex;
+  position: relative;
+  z-index: 1;
+  height: 80px;
 }
 
 .header__columns,
@@ -523,24 +525,45 @@ ul {
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
+@media (max-width: 1000px) {
+  .welcome {
+    padding: 43px 0 47px 0;
+    background-size: 118% auto;
+    background-position: 57% 100%;
+  }
+}
 
 .welcome__content {
   position: relative;
-  max-width: 574px;
+  max-width: 500px;
   margin-left: auto;
+}
+@media (max-width: 1000px) {
+  .welcome__content {
+    max-width: 400px;
+    margin-right: 55px;
+  }
 }
 
 .welcome__ellipse {
   position: absolute;
   top: -74px;
+  left: -73px;
   width: 465px;
   height: 465px;
   border-radius: 50%;
 }
+@media (max-width: 1000px) {
+  .welcome__ellipse {
+    top: -54px;
+    left: -58px;
+    width: 367px;
+    height: 367px;
+  }
+}
 
 .welcome__title {
   position: relative;
-  max-width: 500px;
   margin: 0 0 60px auto;
   font-style: normal;
   font-weight: 700;
@@ -552,6 +575,15 @@ ul {
 }
 .welcome__title span {
   color: #FFEE2E;
+}
+@media (max-width: 1000px) {
+  .welcome__title {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8.5rem;
+    line-height: 6.4rem;
+  }
 }
 
 .welcome__button {

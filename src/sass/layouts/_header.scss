@@ -1,6 +1,8 @@
 .header {
-	height: 80px;
 	display: flex;
+	position: relative;
+	z-index: 1;
+	height: 80px;
 }
 
 .header__columns,
