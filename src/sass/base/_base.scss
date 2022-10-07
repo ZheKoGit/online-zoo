@@ -16,6 +16,14 @@ body {
 	padding: 0 30px;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip-path: polygon(0 0, 0 0, 0 0);
+	margin: -1px;
+}
+
 .wrapper_theme_dark {
 	background-color: $color-dark-add;
 	color: $color-light;
@@ -35,6 +43,10 @@ body {
 	@include font(400, 4.8rem, 5.8rem);
 }
 
+.h3 {
+	@include font(500, 1.6rem, 2.2rem);
+}
+
 .subtitle {
 	margin: 0;
 	@include font(400, 2.4rem, 2.9rem);
@@ -42,4 +54,8 @@ body {
 
 p {
 	margin: 0;
+}
+
+.text_small {
+	@include font(300, 1.5rem, 1.8rem);
 }

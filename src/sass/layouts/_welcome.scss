@@ -27,7 +27,7 @@
 	left: -73px;
 	width: 465px;
 	height: 465px;
-	@extend %color-button;
+	@extend %color-ellipse;
 	border-radius: 50%;
 
 	@include media-laptop {

@@ -1,4 +1,4 @@
-.welcome__ellipse, .button {
+.welcome__ellipse {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
@@ -22,6 +22,14 @@ body {
   padding: 0 30px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  margin: -1px;
+}
+
 .wrapper_theme_dark {
   background-color: #111115;
   color: #FFFFFF;
@@ -41,6 +49,12 @@ body {
   line-height: 5.8rem;
 }
 
+.h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
 .subtitle {
   margin: 0;
   font-weight: 400;
@@ -50,6 +64,12 @@ body {
 
 p {
   margin: 0;
+}
+
+.text_small {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 /* ==========================================================================
@@ -494,13 +514,25 @@ ul {
   color: #FFFFFF;
   text-transform: uppercase;
   border-radius: 25px;
+  background: #F9804B;
   transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #E47209;
+  background-color: #E47209;
 }
 .button:active {
-  background: #4B9200;
+  background-color: #4B9200;
+}
+
+.button-ellipse {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 0;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
 }
 
 /*@import './components/slider';
@@ -676,8 +708,113 @@ ul {
   }
 }
 
-/*@import './layouts/tour';
-@import './layouts/explore';
+.catalog {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.catalog__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin-bottom: 80px;
+}
+
+.catalog__card-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  width: 366px;
+  outline: 1px solid #FA6F32;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.catalog__card-columns {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 28px);
+  margin: 8px 12px 13px 16px;
+}
+
+.catalog__card-inner {
+  color: #000000;
+}
+
+.catalog__card-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.catalog__card-icon-inner {
+  width: 48px;
+  height: 38px;
+  text-align: right;
+}
+
+.catalog__card-image-inner {
+  width: 366px;
+  height: 366px;
+}
+
+.catalog__wrapper {
+  position: relative;
+}
+
+.catalog__button-wrap {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 435px;
+  width: 100%;
+}
+
+.catalog__button_left {
+  position: absolute;
+  left: -82px;
+  background-image: url(/src/img/icons/left.svg);
+}
+
+.catalog__button_right {
+  position: absolute;
+  right: -20px;
+  background-image: url(/src/img/icons/right.svg);
+}
+
+.catalog__button-link {
+  margin: 0 auto;
+}
+
+.catalog__decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.catalog__decor_left {
+  width: 292px;
+  height: 460px;
+  background-image: url(/src/img/backgrounds/palm_foto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog__decor_right {
+  right: 0;
+  left: auto;
+  width: 368px;
+  height: 275px;
+  background-image: url(/src/img/backgrounds/strelitzia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*@import './layouts/explore';
 @import './layouts/video';
 @import './layouts/gallery';
 @import './layouts/tickets';

@@ -5,15 +5,24 @@
 	@include font(normal, 500);
 	color: $color-light;
 	text-transform: uppercase;
-	@extend %color-button;
 	border-radius: 25px;
+	background: $color-button;
 	transition: $transition;
 
 	&:hover {
-		background: $color-button-hover;
+		background-color: $color-button-hover;
 	}
 
 	&:active {
-		background: $color-button-activ;
+		background-color: $color-button-activ;
 	}
+}
+
+.button-ellipse {
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+	border: 0;
+	@include bg(url(), no-repeat, 40%);
+	background-position: 50%;
 }

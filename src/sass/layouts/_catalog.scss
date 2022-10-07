@@ -1,0 +1,93 @@
+.catalog {
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.catalog__columns {
+	@include columns();
+	flex-wrap: wrap;
+	gap: 20px 30px;
+	margin-bottom: 80px;
+}
+
+.catalog__card-link {
+	@include columns(flex, flex-start, flex-start);
+	flex-direction: column-reverse;
+	width: 366px;
+	outline: 1px solid $color-border;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.catalog__card-columns {
+	@include columns(inline-flex);
+	width: calc(100% - 28px);
+	margin: 8px 12px 13px 16px;
+}
+
+.catalog__card-inner {
+	color: $color-dark;
+}
+
+.catalog__card-title {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.catalog__card-icon-inner {
+	width: 48px;
+	height: 38px;
+	text-align: right;
+}
+
+.catalog__card-image-inner {
+	width: 366px;
+	height: 366px;
+}
+
+.catalog__wrapper {
+	position: relative;
+}
+
+.catalog__button-wrap {
+	@include columns(inline-flex);
+	position: absolute;
+	top: 435px;
+	width: 100%;
+}
+
+.catalog__button_left {
+	position: absolute;
+	left: -82px;
+	background-image: url(/src/img/icons/left.svg);
+}
+
+.catalog__button_right {
+	position: absolute;
+	right: -20px;
+	background-image: url(/src/img/icons/right.svg);
+}
+
+.catalog__button-link {
+	margin: 0 auto;
+}
+
+.catalog__decor {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.catalog__decor_left {
+	width: 292px;
+	height: 460px;
+	@include bg(url(/src/img/backgrounds/palm_foto.png))
+}
+
+.catalog__decor_right {
+	right: 0;
+	left: auto;
+	width: 368px;
+	height: 275px;
+	@include bg(url(/src/img/backgrounds/strelitzia.png))
+}
