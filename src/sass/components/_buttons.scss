@@ -2,7 +2,7 @@
 	@include columns(flex, center);
 	width: 298px;
 	height: 54px;
-	@include font(normal, 500);
+	@include font(500);
 	color: $color-light;
 	text-transform: uppercase;
 	border-radius: 25px;

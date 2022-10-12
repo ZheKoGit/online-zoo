@@ -1,28 +1,48 @@
 .catalog {
 	position: relative;
 	padding-bottom: 100px;
+
+	@include media-laptop {
+		padding-bottom: 140px;
+	}
 }
 
 .catalog__columns {
-	@include columns();
+	@include columns(flex, space-evenly);
 	flex-wrap: wrap;
 	gap: 20px 30px;
 	margin-bottom: 80px;
+
+	@include media-1420 {
+		gap: 92px 29px;
+	}
+
+	@include media-laptop {
+		margin-bottom: 77px;
+	}
 }
 
 .catalog__card-link {
 	@include columns(flex, flex-start, flex-start);
 	flex-direction: column-reverse;
-	width: 366px;
 	outline: 1px solid $color-border;
 	border-radius: 5px;
 	overflow: hidden;
+
+	@include media-laptop {
+		width: 294px;
+	}
 }
 
 .catalog__card-columns {
 	@include columns(inline-flex);
 	width: calc(100% - 28px);
 	margin: 8px 12px 13px 16px;
+}
+
+.catalog__card {
+	flex: 1 0 31%;
+	background-color: $color-light;
 }
 
 .catalog__card-inner {
@@ -40,11 +60,6 @@
 	text-align: right;
 }
 
-.catalog__card-image-inner {
-	width: 366px;
-	height: 366px;
-}
-
 .catalog__wrapper {
 	position: relative;
 }
@@ -52,20 +67,34 @@
 .catalog__button-wrap {
 	@include columns(inline-flex);
 	position: absolute;
-	top: 435px;
+	top: calc(50% - 98px);
 	width: 100%;
+
+	@include media-1420 {
+		@include columns(inline-flex, center);
+		width: calc(100% - 62px);
+	}
 }
 
 .catalog__button_left {
-	position: absolute;
+	position: relative;
 	left: -82px;
 	background-image: url(/src/img/icons/left.svg);
+
+	@include media-1420 {
+		left: 0;
+		margin-right: 20%;
+	}
 }
 
 .catalog__button_right {
-	position: absolute;
+	position: relative;
 	right: -20px;
 	background-image: url(/src/img/icons/right.svg);
+
+	@include media-1420 {
+		right: 0;
+	}
 }
 
 .catalog__button-link {
@@ -76,12 +105,21 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: -1;
+
+	@include bg(url())
 }
 
 .catalog__decor_left {
 	width: 292px;
 	height: 460px;
-	@include bg(url(/src/img/backgrounds/palm_foto.png))
+	background-image: url(/src/img/backgrounds/palm_foto.png);
+	background-position: 100% 0;
+
+	@include media-laptop {
+		width: 194px;
+		height: 202px;
+	}
 }
 
 .catalog__decor_right {
@@ -89,5 +127,10 @@
 	left: auto;
 	width: 368px;
 	height: 275px;
-	@include bg(url(/src/img/backgrounds/strelitzia.png))
+	background-image: url(/src/img/backgrounds/strelitzia.png);
+
+	@include media-laptop {
+		width: 241px;
+		height: 180px;
+	}
 }
