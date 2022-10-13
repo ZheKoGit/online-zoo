@@ -44,7 +44,8 @@ body {
 }
 
 .h3 {
-	@include font(500, 1.6rem, 2.2rem);
+	margin: 0;
+	@include font(400, 3.6rem, 4.7rem);
 }
 
 .subtitle {
@@ -58,4 +59,10 @@ p {
 
 .text_small {
 	@include font(300, 1.5rem, 1.8rem);
+}
+
+.text__link {
+	padding-bottom: 1px;
+	color: inherit;
+	border-bottom: 1px solid $color-button;
 }

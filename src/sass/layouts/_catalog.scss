@@ -51,6 +51,7 @@
 
 .catalog__card-title {
 	margin: 0;
+	@include font(500, 1.6rem, 2.2rem);
 	text-transform: uppercase;
 }
 
