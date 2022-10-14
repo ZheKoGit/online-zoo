@@ -59,10 +59,37 @@ p {
 
 .text_small {
 	@include font(300, 1.5rem, 1.8rem);
+	color: $color-text-small;
 }
 
 .text__link {
 	padding-bottom: 1px;
 	color: inherit;
 	border-bottom: 1px solid $color-button;
+}
+
+.decor {
+	position: absolute;
+	z-index: -1;
+	@include bg(url());
+}
+
+.border_gradient {
+	position: relative;
+	border-radius: 20px;
+	border: 2px solid transparent;
+	background-color: $color-feedback-fon;
+	background-clip: padding-box;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -2px;
+		bottom: -2px;
+		left: -2px;
+		right: -2px;
+		z-index: -1;
+		@extend %color-border-add;
+		border-radius: 20px;
+	}
 }

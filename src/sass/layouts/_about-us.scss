@@ -46,14 +46,12 @@
 	}
 }
 
-.about-us__image-fon {
-	position: absolute;
+.about-us__decor {
 	top: 7px;
 	right: 0;
-	z-index: -1;
 	width: 204px;
 	height: 605px;
-	@include bg(url(/src/img/backgrounds/flower_foto1.png));
+	background-image: url(/src/img/backgrounds/flower_foto1.png);
 
 	@include media-laptop {
 		display: none;

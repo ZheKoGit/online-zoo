@@ -102,16 +102,9 @@
 	margin: 0 auto;
 }
 
-.catalog__decor {
-	position: absolute;
+.catalog__decor_left {
 	bottom: 0;
 	left: 0;
-	z-index: -1;
-
-	@include bg(url())
-}
-
-.catalog__decor_left {
 	width: 292px;
 	height: 460px;
 	background-image: url(/src/img/backgrounds/palm_foto.png);
@@ -124,6 +117,7 @@
 }
 
 .catalog__decor_right {
+	bottom: 0;
 	right: 0;
 	left: auto;
 	width: 368px;
