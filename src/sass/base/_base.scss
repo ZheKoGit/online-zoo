@@ -27,14 +27,14 @@ body {
 .wrapper_theme_dark {
 	background-color: $color-dark-add;
 	color: $color-light;
+}
 
-	a {
-		color: $color-light;
-		transition: $transition;
+.link_activ {
+	color: $color-light;
+	transition: $transition;
 
-		&:hover {
-			color: $color-linknav-activ;
-		}
+	&:hover {
+		color: $color-linknav-activ;
 	}
 }
 

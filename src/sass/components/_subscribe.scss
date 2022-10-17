@@ -1,0 +1,40 @@
+.subtitle {
+	margin-bottom: 14px;
+}
+
+.subscribe__columns {
+	@include columns(flex, flex-start);
+}
+
+.subscribe__email {
+	width: 228px;
+	height: 42px;
+	padding: 10px;
+	margin-right: 10px;
+	outline: 0.7px solid $color-button;
+	border: none;
+	border-radius: 2px;
+	background-color: transparent;
+
+	&:focus {
+		outline-color: $color-form-activ;
+	}
+}
+
+.subscribe__button {
+	width: 129px;
+	height: 42px;
+	padding: 10px;
+	@include font(400);
+	color: $color-dark;
+	text-transform: none;
+	background-color: $color-form-fonadd;
+	border: 1px solid $color-form-border;
+	border-radius: 5px;
+
+	&:hover {
+		color: $color-form-activ;
+		border-color: $color-form-activ;
+		background-color: $color-form-fonadd;
+	}
+}

@@ -1,0 +1,29 @@
+.navigation {
+	margin: 0;
+}
+
+.social__item {
+	margin-bottom: 10px;
+}
+
+.social__link {
+	@include columns(flex, space-between, baseline);
+
+	&:hover {
+		color: $color-form-activ;
+
+		.social__icon-wrap {
+			background-color: $color-form-activ;
+		}
+	}
+}
+
+.social__icon-wrap {
+	@include columns(flex, center);
+	width: 26px;
+	height: 26px;
+	margin-right: 12px;
+	background-color: $color-social;
+	border-radius: 50%;
+	transition: $transition;
+}
