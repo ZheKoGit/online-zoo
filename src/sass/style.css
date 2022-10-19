@@ -630,6 +630,80 @@ ul {
   background-position: 50%;
 }
 
+.animal-card {
+  position: relative;
+  flex: 1 0 31%;
+  outline: 1px solid #FA6F32;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.animal-card:hover .animal-card__columns {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  row-gap: 80px;
+  text-align: center;
+  transform: scale(1.5);
+  background-color: rgba(196, 196, 196, 0.5);
+}
+.animal-card:hover .animal-card__text {
+  color: #000000;
+}
+.animal-card:hover .animal-card__image-inner {
+  transform: scale(1.5);
+  opacity: 0.2;
+}
+.animal-card .animal-card__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+@media (max-width: 1000px) {
+  .animal-card {
+    width: 294px;
+  }
+}
+
+.animal-card__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 12px 13px 16px;
+  transition: all 0.3s ease-out;
+}
+
+.animal-card__inner {
+  color: #000000;
+}
+
+.animal-card__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+}
+
+.animal-card__icon-inner {
+  width: 48px;
+  height: 38px;
+  text-align: right;
+}
+
+.animal-card__image-inner {
+  max-width: 366px;
+  transition: all 0.3s ease-out;
+}
+
 .feedback {
   width: 268px;
   height: 391px;
@@ -899,6 +973,7 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  align-items: stretch;
   gap: 20px 30px;
   margin-bottom: 80px;
 }
@@ -911,52 +986,6 @@ ul {
   .catalog__columns {
     margin-bottom: 77px;
   }
-}
-
-.catalog__card-link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column-reverse;
-  outline: 1px solid #FA6F32;
-  border-radius: 5px;
-  overflow: hidden;
-}
-@media (max-width: 1000px) {
-  .catalog__card-link {
-    width: 294px;
-  }
-}
-
-.catalog__card-columns {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: calc(100% - 28px);
-  margin: 8px 12px 13px 16px;
-}
-
-.catalog__card {
-  flex: 1 0 31%;
-  background-color: #FFFFFF;
-}
-
-.catalog__card-inner {
-  color: #000000;
-}
-
-.catalog__card-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  text-transform: uppercase;
-}
-
-.catalog__card-icon-inner {
-  width: 48px;
-  height: 38px;
-  text-align: right;
 }
 
 .catalog__wrapper {

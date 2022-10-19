@@ -10,6 +10,7 @@
 .catalog__columns {
 	@include columns(flex, space-evenly);
 	flex-wrap: wrap;
+	align-items: stretch;
 	gap: 20px 30px;
 	margin-bottom: 80px;
 
@@ -20,45 +21,6 @@
 	@include media-laptop {
 		margin-bottom: 77px;
 	}
-}
-
-.catalog__card-link {
-	@include columns(flex, flex-start, flex-start);
-	flex-direction: column-reverse;
-	outline: 1px solid $color-border;
-	border-radius: 5px;
-	overflow: hidden;
-
-	@include media-laptop {
-		width: 294px;
-	}
-}
-
-.catalog__card-columns {
-	@include columns(inline-flex);
-	width: calc(100% - 28px);
-	margin: 8px 12px 13px 16px;
-}
-
-.catalog__card {
-	flex: 1 0 31%;
-	background-color: $color-light;
-}
-
-.catalog__card-inner {
-	color: $color-dark;
-}
-
-.catalog__card-title {
-	margin: 0;
-	@include font(500, 1.6rem, 2.2rem);
-	text-transform: uppercase;
-}
-
-.catalog__card-icon-inner {
-	width: 48px;
-	height: 38px;
-	text-align: right;
 }
 
 .catalog__wrapper {
