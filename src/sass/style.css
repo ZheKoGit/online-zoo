@@ -47,7 +47,7 @@ body {
   color: #FFFFFF;
   transition: all 0.3s ease-out;
 }
-.link_activ:hover {
+.link_activ:hover, .link_activ:active {
   color: #F9804B;
 }
 
@@ -836,6 +836,11 @@ ul {
     background-size: 118% auto;
     background-position: 57% 100%;
   }
+}
+
+.welcome__donate {
+  padding: 390px 0 0;
+  background-position: 100%;
 }
 
 .welcome__content {

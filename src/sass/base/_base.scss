@@ -33,7 +33,8 @@ body {
 	color: $color-light;
 	transition: $transition;
 
-	&:hover {
+	&:hover,
+	&:active {
 		color: $color-linknav-activ;
 	}
 }
