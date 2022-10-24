@@ -29,17 +29,7 @@ body {
 	color: $color-light;
 }
 
-.link_activ {
-	color: $color-light;
-	transition: $transition;
-
-	&:hover,
-	&:active {
-		color: $color-linknav-activ;
-	}
-}
-
-.title {
+.h2 {
 	margin: 0;
 	@include font(400, 4.8rem, 5.8rem);
 }
@@ -63,10 +53,12 @@ p {
 	color: $color-text-small;
 }
 
-.text__link {
-	padding-bottom: 1px;
-	color: inherit;
-	border-bottom: 1px solid $color-button;
+.text_theme_light {
+	color: $color-light;
+}
+
+.text_theme_color {
+	color: $color-text-color;
 }
 
 .decor {

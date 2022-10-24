@@ -1,9 +1,48 @@
 .navigation {
+	@include columns();
 	margin: 0;
 }
 
+.navigation__item {
+	margin-right: 58px;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.text__link_theme_light {
+	color: $color-light;
+	transition: $transition;
+
+	&:hover {
+		color: $color-linknav-activ;
+	}
+}
+
+.nav__link_activ {
+	color: $color-linknav-activ;
+}
+
+.text__link {
+	padding-bottom: 1px;
+	color: inherit;
+	border-bottom: 1px solid $color-button;
+	transition: $transition;
+
+	&:hover {
+		color: $color-linknav-activ;
+	}
+}
+
+//social
+
 .social__item {
 	margin-bottom: 10px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .social__link {

@@ -13,6 +13,11 @@
 .welcome__donate {
 	padding: 390px 0 0;
 	background-position: 100%;
+
+	@include media-laptop {
+		background-position: 29% 50%;
+		background-size: auto;
+	}
 }
 
 .welcome__content {

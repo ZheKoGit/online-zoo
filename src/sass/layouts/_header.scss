@@ -10,18 +10,13 @@
 }
 
 .header__columns,
-.header__navigation,
-.navigation {
+.header__navigation {
 	@include columns();
 }
 
 .header__columns {
 	flex: 1;
 	justify-content: flex-start;
-}
-
-.navigation__item {
-	margin-right: 58px;
 }
 
 .header__navigation {
