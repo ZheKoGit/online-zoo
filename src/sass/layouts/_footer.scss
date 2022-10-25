@@ -46,12 +46,6 @@
 .footer__navigation {
 	grid-column: 1/2;
 	justify-content: flex-start;
-
-	@include media-laptop {
-		.navigation__item {
-			margin-right: 48px;
-		}
-	}
 }
 
 .footer__copyright-wrap {

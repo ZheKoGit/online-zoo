@@ -1,13 +1,10 @@
 .navigation {
+	column-gap: 58px;
 	@include columns();
 	margin: 0;
-}
 
-.navigation__item {
-	margin-right: 58px;
-
-	&:last-of-type {
-		margin-right: 0;
+	@include media-laptop {
+		column-gap: 48px;
 	}
 }
 

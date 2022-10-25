@@ -3,10 +3,30 @@
 	position: relative;
 	z-index: 1;
 	height: 80px;
+
+	@include media-tablet {
+		height: 34px;
+	}
 }
 
 .header__logo {
 	margin-right: 63px;
+
+	@include media-tablet {
+		width: 47px;
+		height: auto;
+		@include font(400, 1.2rem, 1.5rem);
+		border: none;
+	}
+}
+
+.header__logo-image {
+	@include media-tablet {
+		left: 4px;
+		bottom: 4px;
+		width: 8px;
+		height: 14px;
+	}
 }
 
 .header__columns,
@@ -21,4 +41,43 @@
 
 .header__navigation {
 	flex: 1;
+
+	@include media-tablet {
+		justify-content: flex-end;
+	}
+
+	.navigation {
+		@include media-tablet {
+			display: none;
+		}
+	}
+}
+
+.burger-menu {
+	display: none;
+	position: relative;
+	width: 18px;
+	height: 2px;
+	background-color: $color-light;
+	border-radius: 2px;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: -4px;
+		width: 18px;
+		height: 2px;
+		background-color: $color-light;
+		border-radius: 2px;
+	}
+
+	&::after {
+		top: auto;
+		bottom: -4px;
+	}
+
+	@include media-tablet {
+		display: block;
+	}
 }

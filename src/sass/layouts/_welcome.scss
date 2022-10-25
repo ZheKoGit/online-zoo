@@ -8,6 +8,12 @@
 		background-size: 118% auto;
 		background-position: 57% 100%;
 	}
+
+	@include media-tablet {
+		padding: 48px 0 40px 0;
+		background-size: 120%;
+		background-position: 52% 100%;
+	}
 }
 
 .welcome__donate {
@@ -29,6 +35,11 @@
 		max-width: 400px;
 		margin-right: 55px;
 	}
+
+	@include media-tablet {
+		width: 255px;
+		margin-right: 0;
+	}
 }
 
 .welcome__ellipse {
@@ -45,6 +56,13 @@
 		left: -58px;
 		width: 367px;
 		height: 367px;
+	}
+
+	@include media-tablet {
+		top: -38px;
+		left: -38px;
+		width: 237px;
+		height: 237px;
 	}
 }
 
@@ -64,8 +82,17 @@
 		margin-bottom: 40px;
 		@include font (700, 8.5rem, 6.4rem);
 	}
+
+	@include media-tablet {
+		margin: 0;
+		@include font(700, 5.4rem, 4.1rem);
+	}
 }
 
 .welcome__button {
 	margin: 0 100px 0 auto;
+
+	@include media-tablet {
+		margin: -8px 0 0;
+	}
 }
