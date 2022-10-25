@@ -1,6 +1,6 @@
 .welcome {
 	padding: 86px 0 100px 0;
-	@include bg(url(/src/img/header/Giant_Panda.jpg));
+	@include bg(url(../../src/img/header/Giant_Panda.jpg));
 	background-position: 0 100%;
 
 	@include media-laptop {

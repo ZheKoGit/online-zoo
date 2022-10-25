@@ -77,15 +77,15 @@
 }
 
 .donate__image-one {
-	background-image: url(/src/img/icons/pay.svg);
+	background-image: url(../../src/img/icons/pay.svg);
 }
 
 .donate__image-two {
-	background-image: url(/src/img/icons/payment.svg);
+	background-image: url(../../src/img/icons/payment.svg);
 }
 
 .donate__image-three {
-	background-image: url(/src/img/icons/monkey.svg);
+	background-image: url(../../src/img/icons/monkey.svg);
 }
 
 .donate__icon {
@@ -94,7 +94,7 @@
 	margin: 62px 30px 0;
 	background-repeat: no-repeat;
 	background-position: 50%;
-	background-image: url(/src/img/icons/next.svg);
+	background-image: url(../../src/img/icons/next.svg);
 }
 
 .donate__columns {
@@ -225,7 +225,7 @@
 	right: 10px;
 	width: 10px;
 	height: 20px;
-	@include bg(url(/src/img/icons/dollar.svg));
+	@include bg(url(../../src/img/icons/dollar.svg));
 	filter: invert(64%) sepia(8%) saturate(155%) hue-rotate(163deg) brightness(100%) contrast(90%);
 }
 

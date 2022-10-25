@@ -42,7 +42,7 @@
 .catalog__button_left {
 	position: relative;
 	left: -82px;
-	background-image: url(/src/img/icons/left.svg);
+	background-image: url(../../src/img/icons/left.svg);
 
 	@include media-1420 {
 		left: 0;
@@ -53,7 +53,7 @@
 .catalog__button_right {
 	position: relative;
 	right: -20px;
-	background-image: url(/src/img/icons/right.svg);
+	background-image: url(../../src/img/icons/right.svg);
 
 	@include media-1420 {
 		right: 0;
@@ -69,7 +69,7 @@
 	left: 0;
 	width: 292px;
 	height: 460px;
-	background-image: url(/src/img/backgrounds/palm_foto.png);
+	background-image: url(../../src/img/backgrounds/palm_foto.png);
 	background-position: 100% 0;
 
 	@include media-laptop {
@@ -84,7 +84,7 @@
 	left: auto;
 	width: 368px;
 	height: 275px;
-	background-image: url(/src/img/backgrounds/strelitzia.png);
+	background-image: url(../../src/img/backgrounds/strelitzia.png);
 
 	@include media-laptop {
 		width: 241px;

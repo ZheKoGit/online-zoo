@@ -555,7 +555,7 @@ ul {
   bottom: 9px;
   width: 12px;
   height: 21px;
-  background-image: url(/src/img/icons/logo_bamboo.svg);
+  background-image: url(../../src/img/icons/logo_bamboo.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -899,7 +899,7 @@ ul {
   font-weight: 500;
   font-size: 2.6rem;
   line-height: 3.6rem;
-  background-image: url(/src/img/icons/dollar.svg);
+  background-image: url(../../src/img/icons/dollar.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0 9px;
@@ -946,7 +946,7 @@ ul {
 
 .welcome {
   padding: 86px 0 100px 0;
-  background-image: url(/src/img/header/Giant_Panda.jpg);
+  background-image: url(../../src/img/header/Giant_Panda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 100%;
@@ -1046,7 +1046,7 @@ ul {
   order: -1;
   height: 403px;
   margin-right: 87px;
-  background-image: url(/src/img/about_us/bamboo-cap.jpg);
+  background-image: url(../../src/img/about_us/bamboo-cap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
@@ -1082,7 +1082,7 @@ ul {
   right: 0;
   width: 204px;
   height: 605px;
-  background-image: url(/src/img/backgrounds/flower_foto1.png);
+  background-image: url(../../src/img/backgrounds/flower_foto1.png);
 }
 @media (max-width: 1000px) {
   .about-us__decor {
@@ -1144,7 +1144,7 @@ ul {
 .catalog__button_left {
   position: relative;
   left: -82px;
-  background-image: url(/src/img/icons/left.svg);
+  background-image: url(../../src/img/icons/left.svg);
 }
 @media (max-width: 1420px) {
   .catalog__button_left {
@@ -1156,7 +1156,7 @@ ul {
 .catalog__button_right {
   position: relative;
   right: -20px;
-  background-image: url(/src/img/icons/right.svg);
+  background-image: url(../../src/img/icons/right.svg);
 }
 @media (max-width: 1420px) {
   .catalog__button_right {
@@ -1173,7 +1173,7 @@ ul {
   left: 0;
   width: 292px;
   height: 460px;
-  background-image: url(/src/img/backgrounds/palm_foto.png);
+  background-image: url(../../src/img/backgrounds/palm_foto.png);
   background-position: 100% 0;
 }
 @media (max-width: 1000px) {
@@ -1189,7 +1189,7 @@ ul {
   left: auto;
   width: 368px;
   height: 275px;
-  background-image: url(/src/img/backgrounds/strelitzia.png);
+  background-image: url(../../src/img/backgrounds/strelitzia.png);
 }
 @media (max-width: 1000px) {
   .catalog__decor_right {
@@ -1282,15 +1282,15 @@ ul {
 }
 
 .donate__image-one {
-  background-image: url(/src/img/icons/pay.svg);
+  background-image: url(../../src/img/icons/pay.svg);
 }
 
 .donate__image-two {
-  background-image: url(/src/img/icons/payment.svg);
+  background-image: url(../../src/img/icons/payment.svg);
 }
 
 .donate__image-three {
-  background-image: url(/src/img/icons/monkey.svg);
+  background-image: url(../../src/img/icons/monkey.svg);
 }
 
 .donate__icon {
@@ -1299,7 +1299,7 @@ ul {
   margin: 62px 30px 0;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-image: url(/src/img/icons/next.svg);
+  background-image: url(../../src/img/icons/next.svg);
 }
 
 .donate__columns {
@@ -1444,7 +1444,7 @@ ul {
   right: 10px;
   width: 10px;
   height: 20px;
-  background-image: url(/src/img/icons/dollar.svg);
+  background-image: url(../../src/img/icons/dollar.svg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: invert(64%) sepia(8%) saturate(155%) hue-rotate(163deg) brightness(100%) contrast(90%);
@@ -1564,7 +1564,7 @@ ul {
   bottom: 0;
   width: 247px;
   height: 276px;
-  background-image: url(/src/img/backgrounds/leav_foto.png);
+  background-image: url(../../src/img/backgrounds/leav_foto.png);
 }
 @media (max-width: 1000px) {
   .testimonials__decor {

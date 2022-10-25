@@ -16,7 +16,7 @@
 	order: -1;
 	height: 403px;
 	margin-right: 87px;
-	@include bg(url(/src/img/about_us/bamboo-cap.jpg));
+	@include bg(url(../../src/img/about_us/bamboo-cap.jpg));
 	background-position: 50% 0;
 
 	@include media-laptop {
@@ -51,7 +51,7 @@
 	right: 0;
 	width: 204px;
 	height: 605px;
-	background-image: url(/src/img/backgrounds/flower_foto1.png);
+	background-image: url(../../src/img/backgrounds/flower_foto1.png);
 
 	@include media-laptop {
 		display: none;
