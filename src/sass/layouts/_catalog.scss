@@ -5,6 +5,14 @@
 	@include media-laptop {
 		padding-bottom: 140px;
 	}
+
+	@include media-tablet {
+		padding-bottom: 100px;
+	}
+
+	@include media-mobile {
+		padding-bottom: 60px;
+	}
 }
 
 .catalog__columns {
@@ -14,12 +22,37 @@
 	gap: 20px 30px;
 	margin-bottom: 80px;
 
+	.animal-card {
+		flex: 1 0 31%;
+
+		@include media-tablet {
+			flex: 1 0 calc(50% - 30px);
+
+			&:nth-child(n+5) {
+				display: none;
+			}
+		}
+
+		@include media-mobile {
+			flex: 1 0 100%;
+		}
+	}
+
 	@include media-1420 {
 		gap: 92px 29px;
 	}
 
 	@include media-laptop {
 		margin-bottom: 77px;
+	}
+
+	@include media-tablet {
+		margin-bottom: 60px;
+	}
+
+	@include media-mobile {
+		gap: 20px 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -37,6 +70,15 @@
 		@include columns(inline-flex, center);
 		width: calc(100% - 62px);
 	}
+
+	@include media-tablet {
+		top: 347px;
+		width: calc(100% - 40px);
+	}
+
+	@include media-mobile {
+		display: none;
+	}
 }
 
 .catalog__button_left {
@@ -47,6 +89,10 @@
 	@include media-1420 {
 		left: 0;
 		margin-right: 20%;
+	}
+
+	@include media-tablet {
+		margin-right: 30px;
 	}
 }
 
@@ -76,6 +122,16 @@
 		width: 194px;
 		height: 202px;
 	}
+
+	@include media-tablet {
+		left: -59px;
+	}
+
+	@include media-mobile {
+		left: -9px;
+		width: 69px;
+		height: 73px;
+	}
 }
 
 .catalog__decor_right {
@@ -89,5 +145,15 @@
 	@include media-laptop {
 		width: 241px;
 		height: 180px;
+	}
+
+	@include media-tablet {
+		width: 175px;
+		height: 131px;
+	}
+
+	@include media-mobile {
+		width: 65px;
+		height: 62px;
 	}
 }
