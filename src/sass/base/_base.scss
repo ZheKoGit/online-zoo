@@ -18,6 +18,10 @@ body {
 	@include media-tablet {
 		padding: 0 20px;
 	}
+
+	@include media-mobile {
+		padding: 0 10px;
+	}
 }
 
 .visually-hidden {

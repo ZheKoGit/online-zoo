@@ -1,18 +1,20 @@
 .welcome {
 	padding: 86px 0 100px 0;
 	@include bg(url(../../src/img/header/Giant_Panda.jpg));
-	background-position: 0 100%;
+	background-position: bottom;
 
 	@include media-laptop {
 		padding: 43px 0 47px 0;
-		background-size: 118% auto;
-		background-position: 57% 100%;
+		background-size: 121%;
 	}
 
 	@include media-tablet {
 		padding: 48px 0 40px 0;
-		background-size: 120%;
-		background-position: 52% 100%;
+	}
+
+	@include media-mobile {
+		position: relative;
+		padding: 41px 0 43px;
 	}
 }
 
@@ -40,6 +42,10 @@
 		width: 255px;
 		margin-right: 0;
 	}
+
+	@include media-mobile {
+		width: 128px;
+	}
 }
 
 .welcome__ellipse {
@@ -64,6 +70,13 @@
 		width: 237px;
 		height: 237px;
 	}
+
+	@include media-mobile {
+		top: -19px;
+		left: -18px;
+		width: 119px;
+		height: 119px;
+	}
 }
 
 .welcome__title {
@@ -87,6 +100,10 @@
 		margin: 0;
 		@include font(700, 5.4rem, 4.1rem);
 	}
+
+	@include media-mobile {
+		@include font (700, 2.8rem, 2.1rem);
+	}
 }
 
 .welcome__button {
@@ -94,5 +111,10 @@
 
 	@include media-tablet {
 		margin: -8px 0 0;
+	}
+
+	@include media-mobile {
+		position: absolute;
+		bottom: -74px;
 	}
 }
