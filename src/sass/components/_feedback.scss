@@ -7,6 +7,16 @@
 	@include media-laptop {
 		width: 293px;
 	}
+
+	@include media-tablet {
+		width: 100%;
+		height: 109px;
+		padding: 15px 12px;
+
+		&:nth-child(n+4) {
+			display: none;
+		}
+	}
 }
 
 .feedback__header {
@@ -35,4 +45,8 @@
 .feedback__text-wrap {
 	height: 308px;
 	overflow: hidden;
+
+	@include media-tablet {
+		height: 38px;
+	}
 }

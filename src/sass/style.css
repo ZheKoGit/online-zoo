@@ -781,6 +781,16 @@ ul {
     width: 293px;
   }
 }
+@media (max-width: 640px) {
+  .feedback {
+    width: 100%;
+    height: 109px;
+    padding: 15px 12px;
+  }
+  .feedback:nth-child(n+4) {
+    display: none;
+  }
+}
 
 .feedback__header {
   display: grid;
@@ -808,6 +818,11 @@ ul {
 .feedback__text-wrap {
   height: 308px;
   overflow: hidden;
+}
+@media (max-width: 640px) {
+  .feedback__text-wrap {
+    height: 38px;
+  }
 }
 
 .subtitle {
@@ -1933,6 +1948,16 @@ ul {
     padding: 100px 0 140px;
   }
 }
+@media (max-width: 640px) {
+  .testimonials {
+    padding: 60px 0 80px;
+  }
+}
+@media (max-width: 320px) {
+  .testimonials {
+    padding: 30px 0 60px;
+  }
+}
 
 .testimonials__title {
   margin-bottom: 47px;
@@ -1943,6 +1968,14 @@ ul {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 320px) {
+  .testimonials__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}
 
 .testimonials__columns {
   display: grid;
@@ -1950,6 +1983,19 @@ ul {
   column-gap: 30px;
   margin-bottom: 20px;
   overflow: hidden;
+}
+@media (max-width: 640px) {
+  .testimonials__columns {
+    grid-template-columns: auto;
+    row-gap: 15px;
+    column-gap: 0;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .testimonials__columns {
+    margin-bottom: 30px;
+  }
 }
 
 .testimonials__scrol {
@@ -1969,6 +2015,11 @@ ul {
   .testimonials__scrol {
     width: 390px;
     margin-bottom: 52px;
+  }
+}
+@media (max-width: 640px) {
+  .testimonials__scrol {
+    display: none;
   }
 }
 
@@ -1994,6 +2045,12 @@ ul {
 .testimonials__button {
   border-radius: 5px;
 }
+@media (max-width: 640px) {
+  .testimonials__button {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
 
 .testimonials__decor {
   right: 0;
@@ -2006,6 +2063,20 @@ ul {
   .testimonials__decor {
     width: 190px;
     height: 238px;
+  }
+}
+@media (max-width: 640px) {
+  .testimonials__decor {
+    width: 121px;
+    height: 133px;
+    background-position: 7px 0;
+  }
+}
+@media (max-width: 320px) {
+  .testimonials__decor {
+    width: 60px;
+    height: 66px;
+    background-position: 100% 0;
   }
 }
 
