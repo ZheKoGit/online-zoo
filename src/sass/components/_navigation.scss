@@ -40,6 +40,10 @@
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+
+	@include media-tablet {
+		font-size: 0;
+	}
 }
 
 .social__link {
@@ -62,4 +66,8 @@
 	background-color: $color-social;
 	border-radius: 50%;
 	transition: $transition;
+
+	@include media-tablet {
+		margin-right: 0;
+	}
 }

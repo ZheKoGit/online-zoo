@@ -4,6 +4,10 @@
 
 .subscribe__columns {
 	@include columns(flex, flex-start);
+
+	@include media-mobile {
+		flex-direction: column;
+	}
 }
 
 .subscribe__email {
