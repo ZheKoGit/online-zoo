@@ -28,7 +28,7 @@
 	background-position: 50% 0;
 
 	@include media-laptop {
-		flex: 1 0 455px;
+		flex-basis: 455px;
 		height: 408px;
 		margin-right: 31px;
 	}
@@ -41,6 +41,10 @@
 .about-us__content {
 	flex-basis: 465px;
 	background-color: $color-light;
+
+	@include media-laptop {
+		flex-basis: 454px;
+	}
 
 	@include media-tablet {
 		flex-basis: 495px;

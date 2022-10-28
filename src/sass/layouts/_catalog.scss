@@ -56,24 +56,18 @@
 	}
 }
 
-.catalog__wrapper {
+.catalog__inner {
 	position: relative;
 }
 
 .catalog__button-wrap {
 	@include columns(inline-flex);
 	position: absolute;
-	top: calc(50% - 98px);
+	top: calc(50% - 31px);
 	width: 100%;
 
 	@include media-1420 {
 		@include columns(inline-flex, center);
-		width: calc(100% - 62px);
-	}
-
-	@include media-tablet {
-		top: 347px;
-		width: calc(100% - 40px);
 	}
 
 	@include media-mobile {
@@ -98,7 +92,7 @@
 
 .catalog__button_right {
 	position: relative;
-	right: -20px;
+	right: -82px;
 	background-image: url(../../src/img/icons/right.svg);
 
 	@include media-1420 {
