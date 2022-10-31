@@ -26,6 +26,18 @@
 		background-position: 29% 50%;
 		background-size: auto;
 	}
+
+	@include media-tablet {
+		padding: 335px 0 0;
+		background-position: 38% 49%;
+		background-size: 218%;
+	}
+
+	@include media-mobile {
+		padding: 187px 0 0;
+		background-position: 34% 49%;
+		background-size: 243%;
+	}
 }
 
 .welcome__content {
