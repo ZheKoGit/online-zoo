@@ -127,6 +127,7 @@
 
 	@include media-tablet {
 		left: -20px;
+		font-size: calc(100vw * 0.04);
 	}
 
 	@include media-mobile {

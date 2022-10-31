@@ -73,30 +73,26 @@
 	@include media-mobile {
 		display: none;
 	}
-}
 
-.catalog__button_left {
-	position: relative;
-	left: -82px;
-	background-image: url(../../src/img/icons/left.svg);
+	.button-ellipse_left {
+		left: -82px;
 
-	@include media-1420 {
-		left: 0;
-		margin-right: 20%;
+		@include media-1420 {
+			left: 0;
+			margin-right: 20%;
+		}
+
+		@include media-tablet {
+			margin-right: 30px;
+		}
 	}
 
-	@include media-tablet {
-		margin-right: 30px;
-	}
-}
+	.button-ellipse_right {
+		right: -82px;
 
-.catalog__button_right {
-	position: relative;
-	right: -82px;
-	background-image: url(../../src/img/icons/right.svg);
-
-	@include media-1420 {
-		right: 0;
+		@include media-1420 {
+			right: 0;
+		}
 	}
 }
 

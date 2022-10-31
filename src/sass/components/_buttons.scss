@@ -7,22 +7,38 @@
 	text-transform: uppercase;
 	border-radius: 25px;
 	@extend %color-ellipse;
-	transition: $transition;
 
 	&:hover {
-		background-color: $color-button-hover;
+		background: $color-button-hover;
 	}
 
 	&:active {
-		background-color: $color-button-activ;
+		transition: $transition;
+		background: $color-button-activ;
 	}
 }
 
 .button-ellipse {
+	position: relative;
 	width: 62px;
 	height: 62px;
 	border-radius: 50%;
 	border: 0;
-	@include bg(url(), no-repeat, 40%);
-	background-position: 50%;
+}
+
+.button-ellipse_left,
+.button-ellipse_right {
+	&::before {
+		content: '';
+		position: absolute;
+		width: 18px;
+		height: 10px;
+		@include bg(url(../../src/img/icons/left.svg));
+	}
+}
+
+.button-ellipse_right {
+	&::before {
+		background-image: url(../../src/img/icons/right.svg);
+	}
 }

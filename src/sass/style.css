@@ -665,24 +665,36 @@ ul {
   color: #FFFFFF;
   text-transform: uppercase;
   border-radius: 25px;
-  transition: all 0.3s ease-out;
 }
 .button:hover {
-  background-color: #E47209;
+  background: #E47209;
 }
 .button:active {
-  background-color: #4B9200;
+  transition: all 0.3s ease-out;
+  background: #4B9200;
 }
 
 .button-ellipse {
+  position: relative;
   width: 62px;
   height: 62px;
   border-radius: 50%;
   border: 0;
-  background-image: url();
+}
+
+.button-ellipse_left::before,
+.button-ellipse_right::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 10px;
+  background-image: url(../../src/img/icons/left.svg);
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 50%;
+  background-size: cover;
+}
+
+.button-ellipse_right::before {
+  background-image: url(../../src/img/icons/right.svg);
 }
 
 .animal-card {
@@ -1022,6 +1034,7 @@ ul {
 @media (max-width: 640px) {
   .circle__number {
     left: -20px;
+    font-size: 4vw;
   }
 }
 @media (max-width: 320px) {
@@ -1142,7 +1155,6 @@ ul {
 @media (max-width: 1000px) {
   .welcome {
     padding: 43px 0 47px 0;
-    background-size: 121%;
   }
 }
 @media (max-width: 640px) {
@@ -1519,31 +1531,25 @@ ul {
     display: none;
   }
 }
-
-.catalog__button_left {
-  position: relative;
+.catalog__button-wrap .button-ellipse_left {
   left: -82px;
-  background-image: url(../../src/img/icons/left.svg);
 }
 @media (max-width: 1420px) {
-  .catalog__button_left {
+  .catalog__button-wrap .button-ellipse_left {
     left: 0;
     margin-right: 20%;
   }
 }
 @media (max-width: 640px) {
-  .catalog__button_left {
+  .catalog__button-wrap .button-ellipse_left {
     margin-right: 30px;
   }
 }
-
-.catalog__button_right {
-  position: relative;
+.catalog__button-wrap .button-ellipse_right {
   right: -82px;
-  background-image: url(../../src/img/icons/right.svg);
 }
 @media (max-width: 1420px) {
-  .catalog__button_right {
+  .catalog__button-wrap .button-ellipse_right {
     right: 0;
   }
 }
