@@ -3,6 +3,10 @@
 	@include columns(flex, center);
 	height: 27px;
 	background-color: $color-progress-bar;
+
+	@include media-mobile {
+		height: 13px;
+	}
 }
 
 .circle-list {
@@ -18,11 +22,29 @@
 		top: 50%;
 		width: 100%;
 		height: 2px;
-		background-color: $color-progress-bar-add
+		background-color: $color-progress-bar-add;
+
+		@include media-tablet {
+			width: calc(100% - 70px);
+		}
+
+		@include media-mobile {
+			width: calc(100% - 34px);
+			height: 1px;
+		}
 	}
 
 	@include media-laptop {
 		width: calc(100% - 22px);
+	}
+
+	@include media-tablet {
+		padding: 0 35px;
+	}
+
+	@include media-mobile {
+		width: 100%;
+		padding: 0 17px;
 	}
 }
 
@@ -41,12 +63,28 @@
 		width: 20px;
 		height: 20px;
 		cursor: pointer;
+
+		@include media-mobile {
+			top: calc(-100% - 2.5px);
+			left: calc(-100% - 2.5px);
+		}
 	}
 
 	&:first-of-type {
 		@include media-laptop {
 			display: none;
 		}
+	}
+
+	@include media-tablet {
+		&:nth-child(-n+3) {
+			display: none;
+		}
+	}
+
+	@include media-mobile {
+		width: 5px;
+		height: 5px;
 	}
 }
 
@@ -80,11 +118,25 @@
 	left: -25px;
 	padding-left: 12px;
 	@include font(500, 2.6rem, 3.6rem);
-	@include bg(url(/src/img/icons/dollar.svg), no-repeat, auto);
+	@include bg(url(../../src/img/icons/dollar.svg), no-repeat, auto);
 	background-position: 0 9px;
 
 	@include media-laptop {
 		left: -11px;
+	}
+
+	@include media-tablet {
+		left: -20px;
+		font-size: calc(100vw * 0.04);
+	}
+
+	@include media-mobile {
+		top: 12px;
+		left: -10px;
+		padding-left: 6px;
+		@include font(500, 1.3rem, 1.8rem);
+		background-size: 5px;
+		background-position: 0px 5px;
 	}
 }
 

@@ -1,13 +1,10 @@
 .navigation {
+	column-gap: 58px;
 	@include columns();
 	margin: 0;
-}
 
-.navigation__item {
-	margin-right: 58px;
-
-	&:last-of-type {
-		margin-right: 0;
+	@include media-laptop {
+		column-gap: 48px;
 	}
 }
 
@@ -43,6 +40,10 @@
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+
+	@include media-tablet {
+		font-size: 0;
+	}
 }
 
 .social__link {
@@ -65,4 +66,8 @@
 	background-color: $color-social;
 	border-radius: 50%;
 	transition: $transition;
+
+	@include media-tablet {
+		margin-right: 0;
+	}
 }

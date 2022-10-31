@@ -5,6 +5,14 @@
 	@include media-laptop {
 		padding: 100px 0 145px 0;
 	}
+
+	@include media-tablet {
+		padding: 60px 0 80px;
+	}
+
+	@include media-mobile {
+		padding: 104px 0 40px;
+	}
 }
 
 .about-us__columns {
@@ -16,33 +24,70 @@
 	order: -1;
 	height: 403px;
 	margin-right: 87px;
-	@include bg(url(/src/img/about_us/bamboo-cap.jpg));
+	@include bg(url(../../src/img/about_us/bamboo-cap.jpg));
 	background-position: 50% 0;
 
 	@include media-laptop {
-		flex: 1 0 455px;
+		flex-basis: 455px;
 		height: 408px;
 		margin-right: 31px;
+	}
+
+	@include media-tablet {
+		display: none;
 	}
 }
 
 .about-us__content {
-	flex: 465px;
+	flex-basis: 465px;
 	background-color: $color-light;
+
+	@include media-laptop {
+		flex-basis: 454px;
+	}
+
+	@include media-tablet {
+		flex-basis: 495px;
+	}
+
+	@include media-mobile {
+		flex-basis: 300px;
+		background-color: transparent;
+	}
 }
 
 .about-us__title {
 	margin-bottom: 20px;
+
+	@include media-mobile {
+		margin-bottom: 10px;
+	}
 }
 
 .about-us__subtitle {
 	margin-bottom: 34px;
+
+	@include media-tablet {
+		margin-bottom: 20px;
+	}
+
+	@include media-mobile {
+		margin-bottom: 10px;
+	}
 }
 
 .about-us__text {
 	&:first-of-type {
 		margin-bottom: 54px;
 		line-height: 21px;
+
+		@include media-tablet {
+			margin-bottom: 30px;
+		}
+
+		@include media-mobile {
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -51,9 +96,24 @@
 	right: 0;
 	width: 204px;
 	height: 605px;
-	background-image: url(/src/img/backgrounds/flower_foto1.png);
+	background-image: url(../../src/img/backgrounds/flower_foto1.png);
 
 	@include media-laptop {
 		display: none;
+	}
+
+	@include media-tablet {
+		display: block;
+		width: 231px;
+		height: 476px;
+		background-size: contain;
+		background-position: 141%;
+	}
+
+	@include media-mobile {
+		top: 42px;
+		width: 105px;
+		height: 217px;
+		background-position: 222%;
 	}
 }
