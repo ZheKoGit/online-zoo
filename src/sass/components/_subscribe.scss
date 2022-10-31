@@ -23,6 +23,13 @@
 	&:focus {
 		outline-color: $color-form-activ;
 	}
+
+	&:invalid {
+		&+.subscribe__button {
+			color: $color-form-mistake;
+			border-color: $color-form-mistake;
+		}
+	}
 }
 
 .subscribe__button {

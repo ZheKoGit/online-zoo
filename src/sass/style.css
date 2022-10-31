@@ -874,6 +874,10 @@ ul {
 .subscribe__email:focus {
   outline-color: #4B9200;
 }
+.subscribe__email:invalid + .subscribe__button {
+  color: #D31414;
+  border-color: #D31414;
+}
 
 .subscribe__button {
   width: 129px;
@@ -1065,6 +1069,8 @@ ul {
 }
 @media (max-width: 640px) {
   .header {
+    position: fixed;
+    width: 100%;
     height: 34px;
   }
 }
