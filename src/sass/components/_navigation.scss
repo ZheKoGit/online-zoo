@@ -8,6 +8,14 @@
 	}
 }
 
+.navigation__item_tablet {
+	display: none;
+
+	@include media-tablet {
+		display: block;
+	}
+}
+
 .text__link_theme_light {
 	color: $color-light;
 	transition: $transition;

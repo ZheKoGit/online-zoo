@@ -13,9 +13,14 @@
 <body>
 	<header class="header wrapper_theme_dark">
 		<div class="container header__columns">
-			<a href="index.html" class="text__link_theme_light logo header__logo">
-				<span class="logo__image header__logo-image"></span>
-				PetStory online</a>
+			<div class="header__inner">
+				<a href="index.html" class="text__link_theme_light logo header__logo">
+					<span class="logo__image header__logo-image"></span>
+					PetStory online</a>
+				<div class="burger__wrap">
+					<div class="burger"></div>
+				</div>
+			</div>
 			<nav class="header__navigation">
 				<ul class="navigation">
 					<li class="navigation__item">
@@ -30,12 +35,14 @@
 					<li class="navigation__item">
 						<a href="" class="text__link_theme_light navigation__link">Contact us</a>
 					</li>
+					<li class="navigation__item navigation__item_tablet">
+						<a href="../donate/donate.html" class="text__link_theme_light navigation__link">Donate</a>
+					</li>
 					<li class="navigation__item">
 						<a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank"
 							class="text__link_theme_light navigation__link">Designed by &copy</a>
 					</li>
 				</ul>
-				<div class="burger-menu"></div>
 			</nav>
 		</div>
 	</header>
@@ -421,6 +428,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="module" src="../../src/index.js"></script>
 </body>
 
 </html>
