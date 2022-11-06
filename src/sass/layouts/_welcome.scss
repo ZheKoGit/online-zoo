@@ -1,0 +1,131 @@
+.welcome {
+	padding: 86px 0 100px 0;
+	@include bg(url(../../src/img/header/Giant_Panda.jpg));
+	background-position: bottom;
+
+	@include media-laptop {
+		padding: 43px 0 47px 0;
+	}
+
+	@include media-tablet {
+		padding: 48px 0 40px 0;
+	}
+
+	@include media-mobile {
+		position: relative;
+		padding: 41px 0 43px;
+	}
+}
+
+.welcome__donate {
+	padding: 390px 0 0;
+	background-position: 100%;
+
+	@include media-laptop {
+		background-position: 29% 50%;
+		background-size: auto;
+	}
+
+	@include media-tablet {
+		padding: 335px 0 0;
+		background-position: 38% 49%;
+		background-size: 218%;
+	}
+
+	@include media-mobile {
+		padding: 187px 0 0;
+		background-position: 34% 49%;
+		background-size: 243%;
+	}
+}
+
+.welcome__content {
+	position: relative;
+	max-width: 500px;
+	margin-left: auto;
+
+	@include media-laptop {
+		max-width: 400px;
+		margin-right: 55px;
+	}
+
+	@include media-tablet {
+		width: 255px;
+		margin-right: 0;
+	}
+
+	@include media-mobile {
+		width: 128px;
+	}
+}
+
+.welcome__ellipse {
+	position: absolute;
+	top: -74px;
+	left: -73px;
+	width: 465px;
+	height: 465px;
+	@extend %color-ellipse;
+	border-radius: 50%;
+
+	@include media-laptop {
+		top: -54px;
+		left: -58px;
+		width: 367px;
+		height: 367px;
+	}
+
+	@include media-tablet {
+		top: -38px;
+		left: -38px;
+		width: 237px;
+		height: 237px;
+	}
+
+	@include media-mobile {
+		top: -19px;
+		left: -18px;
+		width: 119px;
+		height: 119px;
+	}
+}
+
+.welcome__title {
+	position: relative;
+	margin: 0 0 60px auto;
+	@include font (700, 10.6rem, 8rem);
+	text-transform: uppercase;
+	text-align: center;
+	color: $color-light;
+
+	span {
+		color: $color-yellow;
+	}
+
+	@include media-laptop {
+		margin-bottom: 40px;
+		@include font (700, 8.5rem, 6.4rem);
+	}
+
+	@include media-tablet {
+		margin: 0;
+		@include font(700, 5.4rem, 4.1rem);
+	}
+
+	@include media-mobile {
+		@include font (700, 2.8rem, 2.1rem);
+	}
+}
+
+.welcome__button {
+	margin: 0 100px 0 auto;
+
+	@include media-tablet {
+		margin: -8px 0 0;
+	}
+
+	@include media-mobile {
+		position: absolute;
+		bottom: -74px;
+	}
+}

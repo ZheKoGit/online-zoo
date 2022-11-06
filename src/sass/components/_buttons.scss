@@ -1,0 +1,44 @@
+.button {
+	@include columns(flex, center);
+	width: 298px;
+	height: 54px;
+	@include font(500);
+	color: $color-light;
+	text-transform: uppercase;
+	border-radius: 25px;
+	@extend %color-ellipse;
+
+	&:hover {
+		background: $color-button-hover;
+	}
+
+	&:active {
+		transition: $transition;
+		background: $color-button-activ;
+	}
+}
+
+.button-ellipse {
+	position: relative;
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+	border: 0;
+}
+
+.button-ellipse_left,
+.button-ellipse_right {
+	&::before {
+		content: '';
+		position: absolute;
+		width: 18px;
+		height: 10px;
+		@include bg(url(../../src/img/icons/left.svg));
+	}
+}
+
+.button-ellipse_right {
+	&::before {
+		background-image: url(../../src/img/icons/right.svg);
+	}
+}

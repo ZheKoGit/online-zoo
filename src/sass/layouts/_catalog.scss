@@ -1,0 +1,149 @@
+.catalog {
+	position: relative;
+	padding-bottom: 100px;
+
+	@include media-laptop {
+		padding-bottom: 140px;
+	}
+
+	@include media-tablet {
+		padding-bottom: 100px;
+	}
+
+	@include media-mobile {
+		padding-bottom: 60px;
+	}
+}
+
+.catalog__columns {
+	@include columns(flex, space-evenly);
+	flex-wrap: wrap;
+	align-items: stretch;
+	gap: 20px 30px;
+	margin-bottom: 80px;
+
+	.animal-card {
+		flex: 1 0 31%;
+
+		@include media-tablet {
+			flex: 1 0 calc(50% - 30px);
+
+			&:nth-child(n+5) {
+				display: none;
+			}
+		}
+
+		@include media-mobile {
+			flex: 1 0 100%;
+		}
+	}
+
+	@include media-1420 {
+		gap: 92px 29px;
+	}
+
+	@include media-laptop {
+		margin-bottom: 77px;
+	}
+
+	@include media-tablet {
+		margin-bottom: 60px;
+	}
+
+	@include media-mobile {
+		gap: 20px 0;
+		margin-bottom: 20px;
+	}
+}
+
+.catalog__inner {
+	position: relative;
+}
+
+.catalog__button-wrap {
+	@include columns(inline-flex);
+	position: absolute;
+	top: calc(50% - 31px);
+	width: 100%;
+
+	@include media-1420 {
+		@include columns(inline-flex, center);
+	}
+
+	@include media-mobile {
+		display: none;
+	}
+
+	.button-ellipse_left {
+		left: -82px;
+
+		@include media-1420 {
+			left: 0;
+			margin-right: 20%;
+		}
+
+		@include media-tablet {
+			margin-right: 30px;
+		}
+	}
+
+	.button-ellipse_right {
+		right: -82px;
+
+		@include media-1420 {
+			right: 0;
+		}
+	}
+}
+
+.catalog__button-link {
+	margin: 0 auto;
+}
+
+.catalog__decor_left {
+	bottom: 0;
+	left: 0;
+	width: 292px;
+	height: 460px;
+	background-image: url(../../src/img/backgrounds/palm_foto.png);
+	background-position: 100% 0;
+
+	@include media-laptop {
+		width: 194px;
+		height: 202px;
+	}
+
+	@include media-tablet {
+		left: -59px;
+	}
+
+	@include media-mobile {
+		left: -9px;
+		width: 69px;
+		height: 73px;
+	}
+}
+
+.catalog__decor_right {
+	bottom: 0;
+	right: 0;
+	left: auto;
+	width: 368px;
+	height: 275px;
+	background-image: url(../../src/img/backgrounds/strelitzia.png);
+
+	@include media-laptop {
+		width: 241px;
+		height: 180px;
+	}
+
+	@include media-tablet {
+		width: 175px;
+		height: 131px;
+	}
+
+	@include media-mobile {
+		width: 65px;
+		height: 62px;
+	}
+}

@@ -1,0 +1,85 @@
+.animal-card {
+	position: relative;
+	outline: 1px solid $color-border;
+	border-radius: 5px;
+	background-color: $color-light;
+	overflow: hidden;
+	cursor: pointer;
+	transition: $transition;
+
+	&:hover .animal-card__columns {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		flex-direction: column;
+		justify-content: center;
+		z-index: 1;
+		row-gap: 80px;
+		text-align: center;
+		transform: scale(1.5);
+		background-color: $color-social;
+	}
+
+	&:hover .animal-card__text {
+		color: $color-dark;
+	}
+
+	&:hover .animal-card__image-inner {
+		transform: scale(1.5);
+		opacity: .2;
+	}
+
+	.animal-card__link {
+		@include columns(flex, flex-start, flex-start);
+		flex-direction: column-reverse;
+	}
+
+}
+
+.animal-card__columns {
+	@include columns(flex);
+	width: 100%;
+	padding: 8px 12px 13px 16px;
+	transition: $transition;
+
+	@include media-tablet {
+		padding: 6px 10px 10px 12px;
+	}
+}
+
+.animal-card__inner {
+	color: $color-dark;
+}
+
+.animal-card__title {
+	margin: 0;
+	@include font(500, 1.6rem, 2.2rem);
+	text-transform: uppercase;
+
+	@include media-tablet {
+		@include font(500, 1.2rem, 1.7rem);
+	}
+}
+
+.animal-card__text {
+	@include media-tablet {
+		@include font(300, 1.1rem, 1.4rem);
+	}
+}
+
+.animal-card__icon-inner {
+	width: 48px;
+	height: 38px;
+	text-align: right;
+
+	@include media-tablet {
+		width: 37px;
+		height: 30px;
+	}
+}
+
+.animal-card__image-inner {
+	max-width: 366px;
+	transition: $transition;
+}

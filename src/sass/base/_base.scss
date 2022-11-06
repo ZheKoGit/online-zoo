@@ -1,0 +1,100 @@
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-style: normal;
+	@include font ();
+	font-family: $font-main;
+	color: $color-text;
+}
+
+.container {
+	max-width: $content-width;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@include media-tablet {
+		padding: 0 20px;
+	}
+
+	@include media-mobile {
+		padding: 0 10px;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip-path: polygon(0 0, 0 0, 0 0);
+	margin: -1px;
+}
+
+.wrapper_theme_dark {
+	background-color: $color-dark-add;
+	color: $color-light;
+}
+
+.h2 {
+	margin: 0;
+	@include font(400, 4.8rem, 5.8rem);
+
+	@include media-mobile {
+		@include font(400, 2.4rem, 2.9rem);
+	}
+}
+
+.h3 {
+	margin: 0;
+	@include font(400, 3.6rem, 4.7rem);
+}
+
+.subtitle {
+	margin: 0;
+	@include font(400, 2.4rem, 2.9rem);
+}
+
+p {
+	margin: 0;
+}
+
+.text_small {
+	@include font(300, 1.5rem, 1.8rem);
+	color: $color-text-small;
+}
+
+.text_theme_light {
+	color: $color-light;
+}
+
+.text_theme_color {
+	color: $color-text-color;
+}
+
+.decor {
+	position: absolute;
+	z-index: -1;
+	@include bg(url());
+}
+
+.border_gradient {
+	position: relative;
+	border-radius: 20px;
+	border: 2px solid transparent;
+	background-color: $color-feedback-fon;
+	background-clip: padding-box;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -2px;
+		bottom: -2px;
+		left: -2px;
+		right: -2px;
+		z-index: -1;
+		@extend %color-border-add;
+		border-radius: 20px;
+	}
+}
